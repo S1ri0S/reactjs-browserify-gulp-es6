@@ -1,10 +1,12 @@
 import Remarkable from 'remarkable';
 import React, { Component } from 'react';
 
-class Comment extends Component {
+export default class Comment extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    this.rawMarkup = this.rawMarkup.bind(this);
   }
 
   rawMarkup() {
@@ -24,5 +26,3 @@ class Comment extends Component {
     );
   };
 }
-
-export default Comment;

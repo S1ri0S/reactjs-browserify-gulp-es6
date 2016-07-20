@@ -15,7 +15,7 @@ gulp.task('scripts', () => {
     })
     .pipe(source('bundle.min.js'))
     .pipe(buffer())
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('./public/scripts/dist'))
 });
 
